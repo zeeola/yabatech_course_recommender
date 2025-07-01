@@ -20,13 +20,6 @@ from datetime import datetime
 import logging
 from utils.recommendation_engine import RecommendationEngine
 
-
-# Check for trained models
-if not os.path.exists("models/model.pkl"):
-    print("🔄 No models found, training new models...")
-    os.system("python train_model.py")
-
-
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
