@@ -1,0 +1,39 @@
+# YABATECH Course Recommendation System - Dependencies
+# ===================================================
+
+# Core Flask and Web Framework
+Flask==2.3.3
+Werkzeug==2.3.7
+Jinja2==3.1.2
+
+# Data Science and Machine Learning
+pandas==2.1.1
+numpy==1.24.3
+scikit-learn==1.3.0
+scipy==1.11.3
+
+# Model Serialization
+joblib==1.3.2
+
+# HTTP Requests and JSON handling
+requests==2.31.0
+
+# Development and Debugging
+python-dotenv==1.0.0
+
+# Security
+MarkupSafe==2.1.3
+itsdangerous==2.1.2
+
+# Optional: For advanced features
+# matplotlib==3.7.2  # For plotting (if needed)
+# seaborn==0.12.2    # For advanced visualization (if needed)
+# plotly==5.17.0     # For interactive plots (if needed)
+
+# System utilities
+click==8.1.7
+colorama==0.4.6
+
+# Additional utilities
+python-dateutil==2.8.2
+pytz==2023.3
