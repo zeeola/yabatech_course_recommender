@@ -387,9 +387,12 @@ def internal_error(error):
     }), 500
 
     
- 
-
-
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))  # default is just for local testing
-    app.run(host="0.0.0.0", port=port)
+    # Train models on first run if they don't exist
+    if yabatech_app.model is None:
+        logger.warning("Models not found – running training script.")
+        os.system("python train_model.py")
+        yabatech_app.load_models()
+
+    port = int(os.environ.get("PORT", 10000))   # Render injects PORT
+    app.run(host="0.0.0.0", port=port, debug=False)
