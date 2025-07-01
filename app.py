@@ -20,6 +20,15 @@ from datetime import datetime
 import logging
 from utils.recommendation_engine import RecommendationEngine
 
+import os
+import zipfile
+
+# Extract models.zip into a 'models' directory (only once)
+if not os.path.exists("models/model.pkl"):
+    with zipfile.ZipFile("models.zip", 'r') as zip_ref:
+        zip_ref.extractall("models")
+
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -386,3 +395,6 @@ if __name__ == '__main__':
         debug=True,
         threaded=True
     )
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
