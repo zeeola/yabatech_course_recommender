@@ -23,10 +23,16 @@ from utils.recommendation_engine import RecommendationEngine
 import os
 import zipfile
 
-# Extract models.zip into a 'models' directory (only once)
+# ✅ Automatically extract models.zip once
 if not os.path.exists("models/model.pkl"):
-    with zipfile.ZipFile("models.zip", 'r') as zip_ref:
-        zip_ref.extractall("models")
+    print("📦 Extracting models.zip...")
+    try:
+        with zipfile.ZipFile("models.zip", 'r') as zip_ref:
+            zip_ref.extractall("models")
+        print("✅ models.zip extracted.")
+    except Exception as e:
+        print(f"❌ Failed to extract models.zip: {e}")
+
 
 
 # Configure logging
