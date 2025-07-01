@@ -1,0 +1,27 @@
+2025-07-01 07:46:03,335 - INFO - Loading trained models...
+2025-07-01 07:46:19,904 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.41.63.36:5000
+2025-07-01 07:46:19,908 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 07:46:19,958 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-01 07:46:26,290 - INFO - Loading trained models...
+2025-07-01 07:46:30,601 - WARNING -  * Debugger is active!
+2025-07-01 07:46:30,619 - INFO -  * Debugger PIN: 261-282-121
+2025-07-01 07:46:30,736 - INFO - 127.0.0.1 - - [01/Jul/2025 07:46:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 07:46:31,068 - INFO - 127.0.0.1 - - [01/Jul/2025 07:46:31] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-01 07:46:31,125 - INFO - 127.0.0.1 - - [01/Jul/2025 07:46:31] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-01 07:46:31,287 - INFO - 127.0.0.1 - - [01/Jul/2025 07:46:31] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=ooZ84WKo325TgfoLW8fA HTTP/1.1" 200 -
+2025-07-01 07:46:31,652 - INFO - 127.0.0.1 - - [01/Jul/2025 07:46:31] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-01 07:52:43,373 - INFO - Loading trained models...
+2025-07-01 07:52:53,708 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.41.63.36:5000
+2025-07-01 07:52:53,709 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 07:52:53,726 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-01 07:52:55,178 - INFO - Loading trained models...
+2025-07-01 07:52:57,327 - WARNING -  * Debugger is active!
+2025-07-01 07:52:57,341 - INFO -  * Debugger PIN: 261-282-121
+2025-07-01 07:53:45,352 - INFO -  * Detected change in 'c:\\Users\\DrSpecimen Research\\yabatech_course_recommender\\utils\\data_processor.py', reloading
+2025-07-01 07:53:46,577 - INFO -  * Restarting with watchdog (windowsapi)
