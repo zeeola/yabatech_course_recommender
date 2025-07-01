@@ -386,7 +386,7 @@ def internal_error(error):
         'success': False
     }), 500
 
-if __name__ == '__main__':
+    
     # Check if models are loaded
     if yabatech_app.model is None:
         logger.error("❌ Models not loaded. Please run 'python train_model.py' first!")
@@ -408,5 +408,8 @@ if __name__ == '__main__':
         threaded=True
     )
 
+import os
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    port = int(os.environ.get("PORT", 10000))  # default is just for local testing
+    app.run(host="0.0.0.0", port=port)
