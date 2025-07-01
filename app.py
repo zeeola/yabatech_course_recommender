@@ -387,26 +387,7 @@ def internal_error(error):
     }), 500
 
     
-    # Check if models are loaded
-    if yabatech_app.model is None:
-        logger.error("❌ Models not loaded. Please run 'python train_model.py' first!")
-        print("\n" + "="*60)
-        print("❌ MODELS NOT FOUND!")
-        print("Please run the training script first:")
-        print("python train_model.py")
-        print("="*60)
-        exit(1)
-    
-    logger.info("🚀 Starting YABATECH Course Recommendation System")
-    logger.info("📍 Access the application at: http://localhost:5000")
-    
-    # Run the Flask app
-    app.run(
-        host='0.0.0.0',
-        port=5000,
-        debug=True,
-        threaded=True
-    )
+ 
 
 
 if __name__ == "__main__":
