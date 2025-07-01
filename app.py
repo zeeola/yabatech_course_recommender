@@ -408,7 +408,6 @@ def internal_error(error):
         threaded=True
     )
 
-import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))  # default is just for local testing
