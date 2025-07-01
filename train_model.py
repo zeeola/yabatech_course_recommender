@@ -422,3 +422,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def launch_flask_app():
+    app = Flask(__name__)
+
+    @app.route('/')
+    def index():
+        return "✅ YABATECH Course Recommender Flask App is running!"
+
+    # 👇 Ensure Render sees this
+    app.run(host="0.0.0.0", port=10000)
+
+if __name__ == "__main__":
+    success = main()
+    if success:
+        launch_flask_app()
