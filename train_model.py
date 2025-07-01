@@ -27,21 +27,6 @@ from sklearn.metrics import precision_recall_fscore_support, roc_auc_score
 import warnings
 warnings.filterwarnings('ignore')
 
-from flask import Flask
-
-
-def launch_flask_app():
-    app = Flask(__name__)
-
-    @app.route('/')
-    def index():
-        return "✅ YABATECH Course Recommender Flask App is running!"
-
-    # 👇 Ensure Render sees this
-    app.run(host="0.0.0.0", port=10000)
-
-
-
 class YabatechModelTrainer:
     """
     Comprehensive model training class for YABATECH course recommendation system
