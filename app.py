@@ -33,6 +33,12 @@ if not os.path.exists("models/model.pkl"):
     except Exception as e:
         print(f"❌ Failed to extract models.zip: {e}")
 
+import os
+
+# Check for trained models
+if not os.path.exists("models/model.pkl"):
+    print("🔄 No models found, training new models...")
+    os.system("python train_model.py")
 
 
 # Configure logging
