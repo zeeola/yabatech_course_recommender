@@ -2,7 +2,7 @@
 
 A machine learning-powered web application that provides personalized course recommendations for Yaba College of Technology (YABATECH) students based on their academic profile, interests, and career goals.
 
-## 🎯 Features
+## Features
 
 - **Personalized Recommendations**: Get course suggestions tailored to your academic background and career aspirations
 - **Machine Learning Powered**: Uses trained ML models to provide accurate and relevant recommendations
@@ -11,7 +11,7 @@ A machine learning-powered web application that provides personalized course rec
 - **Export Options**: Print or share your recommendations
 - **Real-time Validation**: Instant feedback on form inputs with helpful error messages
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 yabatech_course_recommender/
@@ -45,7 +45,7 @@ yabatech_course_recommender/
 └── README.md                     # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ yabatech_course_recommender/
 
 6. **Open your browser** and navigate to `http://localhost:5000`
 
-## 📊 Data Requirements
+## Data Requirements
 
 ### Input Features
 
@@ -112,7 +112,7 @@ Course information includes:
 - Career prospects
 - School/department information
 
-## 🤖 Machine Learning Model
+## Machine Learning Model
 
 ### Algorithm
 The system uses a machine learning classifier (likely Random Forest or similar ensemble method) trained on historical student data and course outcomes.
@@ -129,7 +129,7 @@ The model is evaluated using standard classification metrics:
 - F1-Score
 - Cross-validation scores
 
-## 🌐 Web Application
+## Web Application
 
 ### Backend (Flask)
 - **Framework**: Flask
@@ -145,7 +145,7 @@ The model is evaluated using standard classification metrics:
 - **JavaScript**: Interactive form validation and AJAX requests
 - **Progressive Enhancement**: Works without JavaScript (basic functionality)
 
-## 📋 API Usage
+## API Usage
 
 ### Recommendation Endpoint
 
@@ -183,7 +183,7 @@ The model is evaluated using standard classification metrics:
 }
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 Create a `.env` file for configuration:
@@ -202,7 +202,7 @@ Adjust model parameters in `train_model.py`:
 - Feature selection criteria
 - Cross-validation folds
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests
 ```bash
@@ -215,7 +215,7 @@ python -m pytest tests/
 3. Check form validation
 4. Test error handling
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Model Optimization
 - Feature selection to reduce dimensionality
@@ -228,7 +228,7 @@ python -m pytest tests/
 - Efficient database queries
 - CDN for static files (if deployed)
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Development
 Already covered in Quick Start section.
@@ -261,7 +261,7 @@ CMD ["python", "app.py"]
 - **Google Cloud**: Use App Engine or Compute Engine
 - **Azure**: Use App Service
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -283,7 +283,7 @@ Enable debug mode for development:
 app.run(debug=True, host='0.0.0.0', port=5000)
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -298,7 +298,7 @@ app.run(debug=True, host='0.0.0.0', port=5000)
 - Write unit tests for new features
 - Update documentation for API changes
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
@@ -308,21 +308,21 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **Institution**: Yaba College of Technology (YABATECH)
 - **Contact**: [your.email@example.com]
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - YABATECH for providing institutional support
 - Open source community for libraries and tools
 - Students who provided feedback and testing
 - Machine learning community for algorithms and techniques
 
-## 📚 References
+## References
 
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/)
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Mobile app development
 - [ ] Integration with YABATECH student portal
@@ -335,7 +335,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [ ] Scholarship recommendations
 - [ ] Study group suggestions
 
-## 📊 Version History
+## Version History
 
 - **v1.0.0**: Initial release with basic recommendation functionality
 - **v1.1.0**: Added web interface and improved model accuracy
