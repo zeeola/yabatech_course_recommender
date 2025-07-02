@@ -11,6 +11,8 @@ pandas==2.1.1
 numpy==1.24.3
 scikit-learn==1.3.0
 scipy==1.11.3
+xgboost
+
 
 # Model Serialization
 joblib==1.3.2
