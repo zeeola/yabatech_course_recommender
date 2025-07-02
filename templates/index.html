@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YABATECH Course Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +234-1-453-9208</span>
+                    <span><i class="fas fa-envelope"></i> info@yabatech.edu.ng</span>
+                    <span><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 5:00 PM</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="https://yabatech.edu.ng/images/logo.png" alt="YABATECH Logo" class="logo" onerror="this.style.display='none'">
+                    <div class="logo-text">
+                        <h1>YABATECH</h1>
+                        <p>Yaba College of Technology</p>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h2>Welcome to YABATECH Course Recommendation System</h2>
+                        <p>Get personalized course recommendations based on your academic profile, interests, and career goals. Our AI-powered system helps you make informed decisions about your educational journey.</p>
+                        <button class="cta-button" onclick="scrollToRecommender()">
+                            <i class="fas fa-graduation-cap"></i> Get Course Recommendations
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About YABATECH</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Yaba College of Technology (YABATECH) is one of Nigeria's premier higher institutions, established in 1947. We offer a comprehensive range of National Diploma (ND) and Higher National Diploma (HND) programs across various fields of study.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">75+</div>
+                                <div class="stat-label">Years of Excellence</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Course Programs</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">25,000+</div>
+                                <div class="stat-label">Active Students</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Expert Faculty</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <h3>Accredited Programs</h3>
+                            <p>All our programs are fully accredited by NBTE and relevant professional bodies.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Expert Faculty</h3>
+                            <p>Learn from experienced professionals and industry experts.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-laptop"></i>
+                            <h3>Modern Facilities</h3>
+                            <p>State-of-the-art laboratories and learning facilities.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Industry Partnerships</h3>
+                            <p>Strong connections with industry for internships and job placements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section class="admissions-section" id="admissions">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Admission Requirements</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="admission-grid">
+                    <div class="admission-card">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>National Diploma (ND)</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>Minimum of 5 credits in SSCE/GCE O'Level including English Language and Mathematics</li>
+                                <li>JAMB UTME score of at least 120</li>
+                                <li>Age requirement: Not less than 16 years</li>
+                                <li>Post-UTME screening examination</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="admission-card">
+                        <div class="card-header">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Higher National Diploma (HND)</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>Relevant ND with minimum of Lower Credit</li>
+                                <li>One year post-ND industrial experience (SIWES)</li>
+                                <li>Relevant O'Level requirements</li>
+                                <li>HND screening examination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-dates">
+                    <h3><i class="fas fa-calendar-alt"></i> Important Dates 2024/2025</h3>
+                    <div class="dates-grid">
+                        <div class="date-item">
+                            <strong>Application Period:</strong> May - August 2024
+                        </div>
+                        <div class="date-item">
+                            <strong>Screening Exercise:</strong> September 2024
+                        </div>
+                        <div class="date-item">
+                            <strong>Admission List:</strong> October 2024
+                        </div>
+                        <div class="date-item">
+                            <strong>Registration:</strong> November 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Courses Section -->
+        <section class="courses-section" id="courses">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular Courses</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Computer Science</h3>
+                        <p>Software development, programming, and IT solutions</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Mechanical Engineering</h3>
+                        <p>Design, manufacturing, and mechanical systems</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Electrical Engineering</h3>
+                        <p>Power systems, electronics, and telecommunications</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Civil Engineering</h3>
+                        <p>Construction, infrastructure, and structural design</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Business Administration</h3>
+                        <p>Management, entrepreneurship, and business operations</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Accountancy</h3>
+                        <p>Financial accounting, auditing, and taxation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Course Recommendation Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>Course Recommender</span>
+            </div>
+            <button class="minimize-btn" onclick="toggleChatbot()">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        
+        <div class="chatbot-content">
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm your YABATECH Course Recommendation Assistant. I'll help you find the perfect course based on your profile. Let's start with some basic information.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommendation-form" id="recommendationForm">
+                <form id="courseForm">
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Personal Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="age">Age *</label>
+                                <input type="number" id="age" name="age" min="16" max="50" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">State of Origin *</label>
+                                <select id="state" name="state_of_origin" required>
+                                    <option value="">Select State</option>
+                                    <option value="Lagos">Lagos</option>
+                                    <option value="Ogun">Ogun</option>
+                                    <option value="Oyo">Oyo</option>
+                                    <option value="Osun">Osun</option>
+                                    <option value="Ondo">Ondo</option>
+                                    <option value="Ekiti">Ekiti</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lga">Local Government Area</label>
+                                <input type="text" id="lga" name="lga" placeholder="Enter LGA">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3><i class="fas fa-book"></i> Academic Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jamb_score">JAMB Score *</label>
+                                <input type="number" id="jamb_score" name="jamb_score" min="0" max="400" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="o_level_credits">O'Level Credits *</label>
+                                <input type="number" id="o_level_credits" name="o_level_credits" min="0" max="9" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="previous_education">Previous Education</label>
+                                <select id="previous_education" name="previous_education">
+                                    <option value="Secondary">Secondary School</option>
+                                    <option value="ND">National Diploma</option>
+                                    <option value="NCE">NCE</option>
+                                    <option value="Degree">Bachelor's Degree</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="study_mode">Preferred Study Mode</label>
+                                <select id="study_mode" name="preferred_study_mode">
+                                    <option value="Full-time">Full-time</option>
+                                    <option value="Part-time">Part-time</option>
+                                    <option value="Evening">Evening</option>
+                                    <option value="Weekend">Weekend</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="employment_status">Employment Status</label>
+                                <select id="employment_status" name="employment_status">
+                                    <option value="Unemployed">Unemployed</option>
+                                    <option value="Employed">Employed</option>
+                                    <option value="Self-employed">Self-employed</option>
+                                    <option value="Student">Student</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="experience">Years of Experience</label>
+                                <input type="number" id="experience" name="years_of_experience" min="0" max="30" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3><i class="fas fa-heart"></i> Course Preferences (Optional)</h3>
+                        
+                        <div class="form-group">
+                            <label for="preference1">First Choice</label>
+                            <select id="preference1" name="course_preference_1">
+                                <option value="None">Select Course</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                <option value="Electrical Engineering">Electrical Engineering</option>
+                                <option value="Civil Engineering">Civil Engineering</option>
+                                <option value="Business Administration">Business Administration</option>
+                                <option value="Accountancy">Accountancy</option>
+                                <option value="Mass Communication">Mass Communication</option>
+                                <option value="Architecture">Architecture</option>
+                                <option value="Hospitality Management">Hospitality Management</option>
+                                <option value="Marketing">Marketing</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preference2">Second Choice</label>
+                                <select id="preference2" name="course_preference_2">
+                                    <option value="None">Select Course</option>
+                                    <option value="Computer Science">Computer Science</option>
+                                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                    <option value="Electrical Engineering">Electrical Engineering</option>
+                                    <option value="Civil Engineering">Civil Engineering</option>
+                                    <option value="Business Administration">Business Administration</option>
+                                    <option value="Accountancy">Accountancy</option>
+                                    <option value="Mass Communication">Mass Communication</option>
+                                    <option value="Architecture">Architecture</option>
+                                    <option value="Hospitality Management">Hospitality Management</option>
+                                    <option value="Marketing">Marketing</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preference3">Third Choice</label>
+                                <select id="preference3" name="course_preference_3">
+                                    <option value="None">Select Course</option>
+                                    <option value="Computer Science">Computer Science</option>
+                                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                    <option value="Electrical Engineering">Electrical Engineering</option>
+                                    <option value="Civil Engineering">Civil Engineering</option>
+                                    <option value="Business Administration">Business Administration</option>
+                                    <option value="Accountancy">Accountancy</option>
+                                    <option value="Mass Communication">Mass Communication</option>
+                                    <option value="Architecture">Architecture</option>
+                                    <option value="Hospitality Management">Hospitality Management</option>
+                                    <option value="Marketing">Marketing</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-search"></i> Get Recommendations
+                        </button>
+                        <button type="reset" class="reset-btn">
+                            <i class="fas fa-refresh"></i> Reset Form
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing your profile...</p>
+            </div>
+            
+            <div class="recommendations-result" id="recommendationsResult" style="display: none;">
+                <div class="result-header">
+                    <h3><i class="fas fa-star"></i> Your Course Recommendations</h3>
+                </div>
+                <div id="recommendationsList"></div>
+                <button class="new-search-btn" onclick="resetRecommendations()">
+                    <i class="fas fa-plus"></i> New Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YABATECH</h3>
+                    <p>Yaba College of Technology - Shaping the future through quality technical education and innovation.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#courses">Academic Programs</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Academic</h4>
+                    <ul>
+                        <li><a href="#">Course Catalog</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">E-Learning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Yaba College of Technology<br>P.M.B. 2011, Yaba, Lagos</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+234-1-453-9208</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@yabatech.edu.ng</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yaba College of Technology. All rights reserved. | Course Recommendation System v1.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
